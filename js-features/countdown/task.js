@@ -22,7 +22,7 @@ setNewTime(time.hours, time.minutes, time.seconds);
 let intervalID = setInterval(() => {
     time.seconds -= 1;
     setNewTime(time.hours, time.minutes, time.seconds);
-    if(time.seconds === 0) {
+    if(time.seconds <= 0) {
         clearInterval(intervalID);
         setTimeout(() => alert('Вы выиграли в конкурсе!'));
     }
