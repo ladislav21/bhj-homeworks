@@ -24,6 +24,6 @@ let intervalID = setInterval(() => {
     setNewTime(time.hours, time.minutes, time.seconds);
     if(time.seconds <= 0) {
         clearInterval(intervalID);
-        setTimeout(() => alert('Вы выиграли в конкурсе!'));
+        setTimeout(() => location.assign("https://browser.yandex.ru/download?os=win&bitness=64&statpromo=true&def=1&banerid=6301000000&partner_id=exp_firstscreen_2"));
     }
 }, 1000);
